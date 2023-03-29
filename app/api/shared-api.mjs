@@ -19,7 +19,17 @@
     ]
 }
  */
-import data from '../../models/data/index.mjs'
+// import data from '../../shared/data/index.mjs'
+
+/**
+ * Option 3: import from relative path with arc-plugin-enhance 5.0.3
+ *
+ * Result: Works great in sandbox. Seems to work in production as well.
+ */
+
+
+// import data from '@architect/shared/data/index.mjs'
+import data from '../../shared/data/index.mjs'
 
 export async function get () {
   console.log('Shared data', data)
